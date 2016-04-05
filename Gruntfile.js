@@ -200,7 +200,7 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: 'dist/css/<%= pkg.name %>.css'
+        src: 'dist/css/<%= themeName %>.css'
       },
       theme: {
         options: {
@@ -225,8 +225,8 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       dist: [
-        'dist/css/bootstrap.css',
-        'dist/css/bootstrap-theme.css'
+        'dist/css/<%= themeName %>.css',
+        'dist/css/<%= themeName %>-theme.css'
       ],
       examples: [
         'docs/examples/**/*.css'
